@@ -1,0 +1,12 @@
+services:
+  site:
+    build: .
+    ports:
+      - "1033:8000"
+    restart: unless-stopped
+    volumes:
+      - ./audio:/app/audio
+
+networks:
+  caddy:
+    external: true
