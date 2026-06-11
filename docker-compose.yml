@@ -6,7 +6,3 @@ services:
     restart: unless-stopped
     volumes:
       - ./audio:/app/audio
-
-networks:
-  caddy:
-    external: true
